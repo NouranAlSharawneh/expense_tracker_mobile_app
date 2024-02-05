@@ -1,3 +1,4 @@
+// adding a new expense
 import 'package:flutter/material.dart';
 
 class NewExpense extends StatefulWidget {
