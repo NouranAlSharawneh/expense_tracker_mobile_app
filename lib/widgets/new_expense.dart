@@ -12,10 +12,10 @@ class NewExpense extends StatefulWidget {
 }
 
 class _NewExpenseState extends State<NewExpense> {
-  final _titleController = TextEditingController();
   final _amountController = TextEditingController();
-  DateTime? _selectedDate;
   Category _selectedCategory = Category.travel;
+  DateTime? _selectedDate;
+  final _titleController = TextEditingController();
 
   @override
   void dispose() {
