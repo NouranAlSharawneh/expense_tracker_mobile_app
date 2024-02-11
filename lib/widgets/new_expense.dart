@@ -1,4 +1,5 @@
 // adding a new expense
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:expense_tracker/models/expense.dart';
 
@@ -33,6 +34,18 @@ class _NewExpenseState extends State<NewExpense> {
         amountIsInvalid || 
         _selectedDate == null) 
     {
+      showCupertinoDialog(context: context, builder: (ctnx) => CupertinoAlertDialog(
+        title: const Text('Invalid input'),
+          content: const Text('please make sure a valid input is entered'),
+          actions: [
+            TextButton(
+              onPressed: () {
+                Navigator.pop(ctnx);
+              }, 
+              child: const Text('Okay')
+            ),
+          ],
+      ));
       showDialog(
         context: context, 
         builder: (ctnx) => AlertDialog(
