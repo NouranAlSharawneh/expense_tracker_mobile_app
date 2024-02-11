@@ -1,6 +1,6 @@
-# expense_tracker
+# Expense Tracker
 
-A new Flutter project.
+A new Flutter project, that tracks your expenses and displays them in a chart
 
 ## Getting Started
 
